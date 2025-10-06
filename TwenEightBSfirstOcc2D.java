@@ -1,5 +1,5 @@
 import java.util.*;
-public class BSfirstOcc2D {
+public class TwenEightBSfirstOcc2D {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
