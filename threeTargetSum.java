@@ -1,5 +1,5 @@
 import java.util.*;
-public class Potion{
+public class threeTargetSum{
   public static void main(String[] args){
   int n=4;
     int[] arr= {3,2,4,7};
