@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class soldier{
+public class twoMissingNum{
   public static void main(String[] args){
     int n=5;
     System.out.println("n="+n);
