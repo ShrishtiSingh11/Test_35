@@ -10,7 +10,7 @@ public class twentyLastOcc{
         int key=sc.nextInt();
         int l=0,h=n-1,result=-1;
         while(l<=h){
-            int m=l+(result-l)/2;
+            int m=l+(h-l)/2;
             if(arr[m]==key)
             {
               result=m;
