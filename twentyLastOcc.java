@@ -20,7 +20,7 @@ public class twentyLastOcc{
               l=m+1;
             }
             else {
-              r=m-1;
+              h=m-1;
             }
         }
         System.out.println(result);
