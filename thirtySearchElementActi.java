@@ -1,18 +1,35 @@
 import java.util.*;
-public class MagicPortal{
+public class twenNineSearch2D{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt(), m=sc.nextInt(), target=sc.nextInt();
         int[][] mat=new int[n][m];
-        for(int i=0;i<n;i++) for(int j=0;j<m;j++) grid[i][j]=sc.nextInt();
-        int l=0,r=n*m-1; boolean found=false;
-        while(l<=r){
-            int mid=(l+r)/2;
-            int val=grid[mid/m][mid%m];
-            if(val==target){found=true;break;}
-            else if(val<target) l=mid+1;
-            else r=mid-1;
+        for(int i=0;i<n;i++){
+          for(int j=0;j<m;j++){ 
+            mat[i][j]=sc.nextInt();
+          }
         }
-        System.out.println(found?"Activated":"Failed");
+        int l=0,h=n*m-1; 
+        boolean found=false;
+        while(l<=h){
+            int mid=(l+h)/2;
+            int value=mat[mid/m][mid%m];
+            if(value==target){
+                found=true;
+                break;
+            }
+            else if(value<target) {
+                l=mid+1;
+            }
+            else {
+                h=mid-1;
+            }
+        }
+        if(found){
+            System.out.println("Activated");
+        }else{
+             System.out.println("Failed");
+        }
+       
     }
 }
