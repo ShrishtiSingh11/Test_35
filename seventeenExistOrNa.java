@@ -14,6 +14,6 @@ public class seventeenExistOrNa.{
               break;
             }
         }
-        System.out.println(idx);
+        System.out.println(no);
     }
 }
